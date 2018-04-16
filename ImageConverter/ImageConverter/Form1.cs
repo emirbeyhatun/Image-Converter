@@ -78,10 +78,10 @@ namespace ImageConverter
                     ResizeBtn.Enabled = true;
                     IosBtn.Enabled = true;
                     #region DisplayStats
-                    HeightLbl.Text = img.Height.ToString();
-                    WidthLbl.Text = img.Width.ToString();
-                    VerticleDpiLbl.Text = img.VerticalResolution.ToString();
-                    HorizontalDpiLbl.Text = img.HorizontalResolution.ToString();
+                    Height.Text = img.Height.ToString();
+                    Width.Text = img.Width.ToString();
+                    VerticleDpi.Text = img.VerticalResolution.ToString();
+                    HorizontalDpi.Text = img.HorizontalResolution.ToString();
                     #endregion
                 }catch(Exception ex)
                 {
@@ -186,10 +186,10 @@ namespace ImageConverter
                 float ratio = float.Parse(ResizeText.Text.ToString());
                 img = ScaleByPercent(img, ratio);
                 #region DisplayStats
-                HeightLbl.Text = img.Height.ToString();
-                WidthLbl.Text = img.Width.ToString();
-                VerticleDpiLbl.Text = img.VerticalResolution.ToString();
-                HorizontalDpiLbl.Text = img.HorizontalResolution.ToString();
+                Height.Text = img.Height.ToString();
+                Width.Text = img.Width.ToString();
+                VerticleDpi.Text = img.VerticalResolution.ToString();
+                HorizontalDpi.Text = img.HorizontalResolution.ToString();
 
                 #endregion
                 pictureBox1.Image = img;
